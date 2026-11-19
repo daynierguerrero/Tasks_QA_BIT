@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tasks_QA_BIT.Application\Tasks_QA_BIT.Application.csproj" />
+    <ProjectReference Include="..\Tasks_QA_BIT.Domain\Tasks_QA_BIT.Domain.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.11" />
+  </ItemGroup>
+</Project>

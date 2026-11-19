@@ -1,0 +1,19 @@
+@Tasks_QA_BIT_HostAddress = http://localhost:5128
+
+### Crear una tarea
+POST {{Tasks_QA_BIT_HostAddress}}/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Preparar entrega",
+  "description": "Revisar los pendientes del sprint",
+  "status": "Pendiente",
+  "responsible": "Ana",
+  "dueDate": "2026-12-31"
+}
+
+### Listar con filtros y paginación
+GET {{Tasks_QA_BIT_HostAddress}}/api/tasks?status=Pendiente&responsible=Ana&page=1&pageSize=10
+Accept: application/json
+
+###
