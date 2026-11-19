@@ -15,7 +15,7 @@ dotnet restore
 dotnet run --project .\Tasks_QA_BIT\Tasks_QA_BIT.csproj
 ```
 
-En desarrollo, Swagger queda disponible en la dirección mostrada por `dotnet run`, en `/swagger`. La base `tasks.db` se crea en el directorio de trabajo y la migración inicial se aplica automáticamente al iniciar.
+En desarrollo, Swagger queda disponible en la dirección mostrada por `dotnet run`, en `/swagger`. La base `tasks.db` se crea en el directorio de trabajo. **Las migraciones se ejecutan automáticamente al iniciar la API**; no es necesario aplicarlas manualmente. Al incorporar migraciones futuras, también se aplicarán al próximo inicio.
 
 ## Tests
 
